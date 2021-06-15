@@ -1,0 +1,274 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.logo{
+	width: 20%;
+	text-align: center;
+	margin-top: 100px;
+}
+
+.logo img{
+	height: 150px;
+}
+.wrapper{
+	background-color: thistle;	
+}
+.navbar{
+	position: fixed;
+	height: 80px;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background-color: white
+}
+.navbar .logo{
+	width: 140px;
+	height: auto;
+	padding: 20px 100px;
+}
+.navbar ul{
+	float: right;
+	margin-right: 20px;
+}
+.navbar ul li{
+	list-style: none;
+	margin: 0 8px;
+	display: inline-block;
+	line-height: 80px;
+}
+.navbar ul li a{
+	font-size: 20px;
+	font-family: 'Roboto', sans-serif;
+	color: rgb(10, 10, 10);
+	padding: 6px 13px;
+	text-decoration: none;
+	transition: .4s;
+}
+.navbar ul li a.active,
+.navbar ul li a:hover{
+	background: rgb(240, 186, 186);
+	border-radius: 2px;
+}
+.wrapper .center{
+	position: absolute;
+	left: 50%;
+	top: 55%;
+	transform: translate(-50%, -50%);
+	font-family: sans-serif;
+	user-select: none;
+}
+.center h1{
+	color: rgb(59, 52, 52);
+	font-size: 70px;
+	width: 900px;
+	font-weight: bold;
+	text-align: center;
+
+}
+.center h5{
+	color: rgb(151, 127, 127);
+	font-size: 30px;
+	font-weight: bold;
+	margin-top: 10px;
+	width: 900px;
+	text-align: center;
+	transition: ease-in 0.6s;
+}
+.center .buttons{
+	margin: 35px 280px;
+}
+.buttons button{
+	height: 50px;
+	width: 150px;
+	font-size: 18px;
+	font-weight: 600;
+	color: #ffb3b3;
+	background: rgb(68, 53, 53);
+	outline: none;
+	cursor: pointer;
+	border: 1px solid #332525;
+	border-radius: 25px;
+	transition: .4s;
+}
+.buttons .btn2{
+	margin-left: 25px;
+}
+.buttons button:hover{
+	background: #cc0000;
+}
+
+form {
+	background-color: gray;
+	border: 3px solid #f1f1f1;
+}
+
+input[type=text],
+input[type=password] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+
+button {
+	background-color: #4CAF50;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+}
+
+button:hover {
+	opacity: 0.8;
+}
+
+.cancelbtn {
+	width: auto;
+	padding: 10px 18px;
+	background-color: #f44336;
+}
+
+.imgcontainer {
+	text-align: center;
+	margin: 24px 0 12px 0;
+}
+
+
+img.avatar {
+	width: 40%;
+	border-radius: 50%;
+}
+
+
+.container {
+	padding: 16px;
+}
+
+
+span.psw {
+	float: right;
+	padding-top: 16px;
+}
+
+
+@media screen and (max-width: 300px) {
+	span.psw {
+		display: block;
+		float: none;
+	}
+	.cancelbtn {
+		width: 100%;
+	}
+}
+ul {
+	list-style: disc;
+	padding-left: 40px;
+	top: center;
+  }
+input[type=text], select, textarea {
+	width: 100%;
+	padding: 12px;  
+	border: 1px solid #ccc; 
+	border-radius: 4px; 
+	box-sizing: border-box; 
+	margin-top: 6px; 
+	margin-bottom: 16px; 
+	resize: vertical 
+  }
+  input[type=submit] {
+	background-color: #04AA6D;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+  
+ 
+  input[type=submit]:hover {
+	background-color: #45a049;
+}
+  
+.container{
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 20px;
+}
+.container {
+	overflow: hidden;
+  }
+  .filterDiv {
+	float: left;
+	background-color: #2196F3;
+	color: #ffffff;
+	width: 100px;
+	line-height: 100px;
+	text-align: center;
+	margin: 2px;
+	display: none; 
+  }
+  .show {
+	display: block;
+  }
+  
+ 
+  .btn {
+	border: none;
+	outline: none;
+	padding: 12px 16px;
+	background-color: #e47f7f;
+	cursor: pointer;
+  }
+  
+  
+  .btn:hover {
+	background-color: rgb(88, 225, 235);
+  }
+  
+ 
+  .btn.active {
+	background-color: #666;
+	color: white;
+  }
+
+  .button {
+	border-radius: 4px;
+	background-color: #5ac1d3;
+	border: none;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 28px;
+	padding: 20px;
+	width: 200px;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 5px;
+	position: center;
+  }
+  
+  .button span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+  }
+  
+  .button span:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+  }
+  
+  .button:hover span {
+	padding-right: 25px;
+  }
+  
+ 
